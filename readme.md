@@ -50,3 +50,29 @@ Certifique-se de proteger sua chave de API e não compartilhá-la publicamente. 
 **Aviso:** O uso excessivo pode resultar em limitações na cota ou custos adicionais, dependendo das políticas da OpenAI.
 
 Fique à vontade para contribuir, relatar problemas ou melhorar este projeto. Obrigado por utilizar a API de Cotação de Preços GPT-3.5 Turbo!
+
+## Como publicar
+
+0. Acesse o dockerfile.
+
+   ```bash
+   cd env/dockerfile
+   ```
+
+1. Execute o docker:
+
+   ```bash
+   docker build -t nome-da-imagem .
+   ```
+
+2. Atribua uma tag a seu build:
+
+   ```bash
+   docker tag <hash> username/nome-da-imagem:latest
+   ```
+
+3. Publique o sua imagem do docker hub.
+
+   ```bash
+   docker push username/nome-da-imagem:latest
+   ```
